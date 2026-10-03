@@ -1,0 +1,46 @@
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Python cache & test artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.pytest_cache/
+.coverage
+htmlcov/
+
+# Local model weights and cache (Never commit weights)
+*.pt
+*.onnx
+*.bin
+*.safetensors
+storage/models/
+models/
+.cache/
+hf_models/
+yolov8*.pt
+
+# Node / Frontend build output
+node_modules/
+frontend/dist/
+frontend/node_modules/
+
+# Local databases & uploads
+*.db
+*.sqlite
+resqintel.db
+storage/uploads/*
+!storage/uploads/.gitkeep
+
+# Environment variables & local secrets
+.env
+.env.local
+
+# IDE & OS
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+.DS_Store

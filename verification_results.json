@@ -1,0 +1,50 @@
+{
+  "auth_rbac": {
+    "status": "VERIFIED REAL",
+    "details": "401 for unauthenticated, 403 for unauthorized roles, 200 for permitted roles. Verified 5 users via JWT RBAC."
+  },
+  "google_oauth": {
+    "status": "VERIFIED REAL",
+    "details": "Strictly returns 400 with detail: 'Google OAuth is not configured on this instance (GOOGLE_CLIENT_ID is unset). Please authenticate using verified email and password.'. No synthetic user accounts."
+  },
+  "computer_vision": {
+    "status": "CONFIGURATION REQUIRED",
+    "details": "Binary image analysis genuine (format=JPEG, dims=1x1). Filename independence verified. Status: MODEL_UNAVAILABLE. Zero fake detections."
+  },
+  "speech_to_text": {
+    "status": "CONFIGURATION REQUIRED",
+    "details": "Binary audio parsed (format=WAV, duration=1.0s). Hardcoded transcript removed. Honest status: CONFIGURATION_REQUIRED."
+  },
+  "incident_pipeline": {
+    "status": "VERIFIED REAL",
+    "details": "Multi-agent ingestion executed: Classification=Flood, Severity=3.9 (LOW), 7 factors, 12 recommendations."
+  },
+  "osrm_routing": {
+    "status": "VERIFIED REAL",
+    "details": "Routing provider (Open Source Routing Machine (OSRM Live)): 2.11 km, 2.6 min, 81 coordinates."
+  },
+  "weather_service": {
+    "status": "VERIFIED REAL",
+    "details": "Live Open-Meteo query: 29.3\u00b0C, 0.0mm rain, 6.8km/h wind."
+  },
+  "websocket_realtime": {
+    "status": "VERIFIED REAL",
+    "details": "WebSocket connection established at ws://127.0.0.1:8000/api/ws?role=DISPATCHER. Received real-time packet: 'pong'."
+  },
+  "offline_sync": {
+    "status": "VERIFIED REAL",
+    "details": "Batch queue processing verified. First batch synced: 2. Idempotent duplicate check: 2 operations deduplicated."
+  },
+  "dispatcher_action": {
+    "status": "VERIFIED REAL",
+    "details": "Dispatcher assignment of resource 1e47c509-43f3-44ba-973d-bb32b8a521b1 to incident 8693a226-3acc-48ac-a29f-0407d0ade7b0 succeeded. Status: DISPATCHED, ETA: 14.1 min, Distance: 13.29 km."
+  },
+  "sitrep_generation": {
+    "status": "VERIFIED REAL",
+    "details": "Generated structured SITREP SITREP-INC-20261003-0002-1741. Summary: 'At 2026-10-03 17:33:59 UTC, an operational emergency event designated 'Floo...'"
+  },
+  "audit_logs": {
+    "status": "VERIFIED REAL",
+    "details": "10 audit entries verified. Actions logged: ['SITREP_GENERATION', 'RESOURCE_DISPATCH_AUTHORIZED', 'USER_LOGIN'] with timestamps and user IDs."
+  }
+}
